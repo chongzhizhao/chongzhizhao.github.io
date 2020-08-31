@@ -1,9 +1,3 @@
-## Jesus loves you
-
-And he said to all, "If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it.
-
-Luke 9:23-24
-
 ### Truth
 
 # Faith
