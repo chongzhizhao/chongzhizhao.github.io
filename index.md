@@ -8,5 +8,8 @@ I am curious about the latest progress in microarchitectural security research a
 - Intermediate: C/C++, Python, Verilog, QEMU Emulator, Raspberry Pi Ecosystem
 - Proficient: gem5 Simulator, UNIX CLI
 
+## Publications
+Yasin, M., Zhao, C., Rajendran, J. (2019). SFLL-HLS: Stripped-Functionality Logic Locking Meets High-Level Synthesis. ICCAD.
+
 ## Contact
 If you are a recruiter, please find me at chongzhizhao4(at)gmail(dot)com so that I can send you my resume.
