@@ -15,4 +15,5 @@ Yasin, M., Zhao, C., Rajendran, J. (2019). SFLL-HLS: Stripped-Functionality Logi
 If you are a recruiter, please find me at chongzhizhao4(at)gmail(dot)com so that I can send you my resume.
 
 ## Note Topics
+
 [Cache Side-Channel Attacks](side_channel/contents.md)
