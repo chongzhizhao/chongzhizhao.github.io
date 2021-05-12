@@ -1,8 +1,12 @@
-What does "mostly inclusive/exclusive" mean?
+##What does "mostly inclusive/exclusive" mean?
 
-Upon eviction, is a cache line evicted from all cache levels?
+In mem/cache/base.cc, allocOnFill() suggest that "mostly inclusive" ensures allocation upon fill.
+This is called when a miss happens and marks the MSHR entry so it will be allocated. Thus, for
+block allocation, the cache is strictly inclusive.
 
-How is clflush instruction implemented?
+##Upon eviction, is a cache line evicted from all cache levels?
 
-How is a replacement eviction implemented?
+##How is clflush instruction implemented?
+
+##How is a replacement eviction implemented?
 
