@@ -9,6 +9,8 @@ upon an eviction.
 
 ## Upon eviction, is a cache line evicted from all cache levels?
 
+The type of eviction I'm looking at is replacement eviction.
+
 ## How is clflush instruction implemented?
 
 ## How is a replacement eviction implemented?

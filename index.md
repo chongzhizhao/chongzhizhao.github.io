@@ -1,18 +1,25 @@
 # About Me
 
 ## Summary of Research
-I am curious about the latest progress in microarchitectural security research and how we can defend our computers from a plethora of side channel attacks. I believe that security should be regarded as a first-order design constraint as well as performance and power. To this end, I have been experimenting side channel exploits and devising defense techniques. Additionally, I also work with cache replacement policies and prefetching techniques.
+
+As computing grows in connectivity and heterogeneity, security ought
+to be regarded as a first-order design metric as well as performance
+and power. To this end, my research involves side-channel attacks,
+cache replacement policies, and prefetching.
 
 ## Skills
-- Beginner: ARMv8 ISA, LATEX
-- Intermediate: C/C++, Python, Verilog, QEMU Emulator, Raspberry Pi Ecosystem
-- Proficient: gem5 Simulator, UNIX CLI
+
+- Beginner: x86 Assembly, LATEX, Raspberry Pi ecosystem
+- Intermediate: Python, Verilog, QEMU Emulator, Xilinx Vivado
+- Proficient: C/C++, gem5 Simulator, ARMv8 Assembly, Linux OS
 
 ## Publications
+
 Yasin, M., Zhao, C., Rajendran, J. (2019). SFLL-HLS: Stripped-Functionality Logic Locking Meets High-Level Synthesis. ICCAD.
 
 ## Contact
-If you are a recruiter, please find me at chongzhizhao4(at)gmail(dot)com so that I can send you my resume.
+
+If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com so that I can send you my resume.
 
 ## Topics of Notes
 
