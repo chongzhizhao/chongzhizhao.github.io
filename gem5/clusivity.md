@@ -7,13 +7,22 @@ block allocation, the cache is strictly inclusive.
 The more important question here is whether the same cache line in upper level caches are evicted
 upon an eviction.
 
-## Upon eviction, is a cache line evicted from all cache levels?
+## Upon replacement eviction, is a cache line evicted from all cache levels?
 
-The type of eviction I'm looking at is replacement eviction.
+The type of eviction I'm looking at is replacement eviction. It is triggered in this sequence:
+BaseCache::access() or BaseCache::handleFill() >> BaseCache::allocateBlock() >> BaseCache::handleEvictions()
+>> evictBlock(). The final function is virtually implemented in BaseCache but overriden in Cache.
+After taking over, Cache::evictBlock() decides if the block shall be handled with BaseCache::writebackBlk()
+or Cache::cleanEvictBlk(). In our case, my guess is that cleanEvictBlk() should be used to make a
+packet before the invalidation. The packet is added to the writeback packet list that is then passed back
+up the chain. In any event, Cache::doWritebacks() does not ask the same block to be evicted from upper
+level caches.
+
+BaseSetAssoc::findVictim() is responsible for returning a pointer to a potential victim by
+consulting the replacement policy.
+
+## What does it take to implement strict clusivity?
 
 ## How is clflush instruction implemented?
 
-## How is a replacement eviction implemented?
-
-## What does it take to implement strict clusivity?
 
