@@ -23,6 +23,11 @@ consulting the replacement policy.
 
 ## What does it take to implement strict clusivity?
 
-## How is clflush instruction implemented?
+The basic idea should be sending a snoop to the upper level cache to see if the block is present.
+If it is present, it must be invalidated. The problem with this idea is: can the upper level copy
+have a more up-to-date version of data? If yes, it has to be written back.
 
-
+My current idea is to let Cache::doWritebacks() prepared a packet in the event when the block
+is found in any higher level cache. If the block is clean, just invalidate it. If dirty, write
+back that block instead. The packet may be sent through ResponsePort::sendTimingSnoopReq() in the
+cpuSidePort. The upstream cache, on the other hand, has to handle it in memSidePort with recvTimingSnoopReq().
