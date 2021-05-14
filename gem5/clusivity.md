@@ -10,8 +10,8 @@ upon an eviction.
 ## Upon replacement eviction, is a cache line evicted from all cache levels?
 
 The type of eviction I'm looking at is replacement eviction. It is triggered in this sequence:
-BaseCache::access() or BaseCache::handleFill() >> BaseCache::allocateBlock() >> BaseCache::handleEvictions()
->> evictBlock(). The final function is virtually implemented in BaseCache but overriden in Cache.
+BaseCache::access() or BaseCache::handleFill() >> BaseCache::allocateBlock() >> BaseCache::handleEvictions() >>
+evictBlock(). The final function is virtually implemented in BaseCache but overriden in Cache.
 After taking over, Cache::evictBlock() decides if the block shall be handled with BaseCache::writebackBlk()
 or Cache::cleanEvictBlk(). In our case, my guess is that cleanEvictBlk() should be used to make a
 packet before the invalidation. The packet is added to the writeback packet list that is then passed back
