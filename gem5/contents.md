@@ -2,4 +2,4 @@
 
 [Cache Clusivity](clusivity.md)
 
-[`clflush`](clflush.md)
+[`clflush` instruction](clflush.md)
