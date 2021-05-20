@@ -1,3 +1,6 @@
+Find an official explanation of the classic memory coherence
+[here](https://www.gem5.org/documentation/general_docs/memory_system/classic-coherence-protocol/).
+
 ## What does "mostly inclusive/exclusive" mean?
 
 In mem/cache/base.cc, allocOnFill() suggest that "mostly inclusive" ensures allocation upon fill.
