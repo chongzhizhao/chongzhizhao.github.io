@@ -20,3 +20,5 @@ dzdo find /PATH/TO/site-packages/ -type f -exec chmod 644 -- {} +
 dzdo find /PATH/TO/site-packages/ -type d -exec chmod 755 -- {} +
 ```
 
+The caveat is that this requires some level of privilege. If gem5 is being
+built on a server, try installing SCons in a virtual environment with pip3.

@@ -34,3 +34,13 @@ My current idea is to let Cache::doWritebacks() prepared a packet in the event w
 is found in any higher level cache. If the block is clean, just invalidate it. If dirty, write
 back that block instead. The packet may be sent through ResponsePort::sendTimingSnoopReq() in the
 cpuSidePort. The upstream cache, on the other hand, has to handle it in memSidePort with recvTimingSnoopReq().
+
+Alternatively, BaseCache::memInvalidate() and memWriteback() seem to be good examples of using
+BaseCache::invalidateVisitor(). However, the input argument is a pointer to the block to be invalidated,
+which may be useless if we are initiating the invalidation from another cache. We probably need the
+physical address.
+
+## What is my current solution?
+
+For now, I insert a block of code in BaseCache::handleEvictions() where an express snoop packet is made.
+The packet contains a request that commands invalidation.
