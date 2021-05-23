@@ -15,7 +15,7 @@ cache replacement policies, and prefetching.
 
 ## Publications
 
-Yasin, M., Zhao, C., Rajendran, J. (2019). SFLL-HLS: Stripped-Functionality Logic Locking Meets High-Level Synthesis. ICCAD.
+Yasin, M., **Zhao, C.**, Rajendran, J. (2019). SFLL-HLS: Stripped-Functionality Logic Locking Meets High-Level Synthesis. ICCAD.
 
 ## Contact
 
