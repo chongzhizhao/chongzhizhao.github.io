@@ -6,4 +6,6 @@
 
 [Cache Clusivity](clusivity.md)
 
+[Decoder](decoder.md)
+
 [`clflush` instruction](clflush.md)
