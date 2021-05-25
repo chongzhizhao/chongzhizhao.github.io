@@ -6,6 +6,20 @@ In the case where the default gcc version is below 5, run this
 scl enable devtoolset-7 bash
 ```
 
+Using a Python virtual environment is strongly recommended
+
+```
+virtualenv -p python3 ~/gem5-env
+source ~/gem5-env/bin/activate
+deactivate
+```
+
+After these are done, try building gem5
+
+```
+scons build/X86/gem5.opt -j32
+```
+
 When I attempted to build the latest gem5 v21, SCons broke with the following
 message
 
