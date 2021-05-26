@@ -9,3 +9,5 @@
 [Decoder](decoder.md)
 
 [`clflush` instruction](clflush.md)
+
+[m5ops](m5ops.md)
