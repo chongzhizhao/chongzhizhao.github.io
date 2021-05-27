@@ -1,3 +1,3 @@
 # Table of Contents
 
-[Primer](primer.md)
+- [Primer](primer.md)
