@@ -8,3 +8,11 @@ takes a memory location and returns a value; and 2) a *write-request* that takes
 location & a value and returns an acknowledgement.
 
 Coherence invariants: single-writer-multiple-reader (SWMR) and data-value.
+
+A memory consistency model (MC) defines permissable behaviors of multithreaded programs
+with shared memory. It requires more than cache coherency and is also affected by the
+reordering in the pipeline.
+
+## Sequential Consistency (SC)
+
+
