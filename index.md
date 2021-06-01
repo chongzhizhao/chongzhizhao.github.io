@@ -24,6 +24,10 @@ If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com so 
 # Topics of Notes
 
 - [Cache Side-Channel Attacks](side_channel/contents.md)
+
 - [gem5](gem5/contents.md)
+
 - [Hardware Reverse-Engineering](hw_reveng/contents.md)
+
 - [Consistency and Coherence](coherence/contents.md)
+
