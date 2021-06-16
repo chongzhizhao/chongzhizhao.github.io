@@ -6,11 +6,15 @@ Publish 3 papers
 
 - Get enough done for 1 paper.
 
-    - Make Prime+Probe sufficiently good.
+    - Yield good results from Prime+Probe attack.
+
+        - Make sure that the cache is strictly inclusive.
 
     - Quantify the information leakage.
 
-    - Find a good policy to defend against the attack.
+        - Calculate edit distance for error rate and pause period for channel capacity.
+
+    - Find a good replacement policy to defend against the attack.
 
 - Learn cache coherency.
 
