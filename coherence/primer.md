@@ -54,3 +54,17 @@ is important for SMT/hyperthreading.
 The atomic RMW effectively drains the write buffer before its load can be performed. Furthermore,
 the load requires read-write coherence permissions. Lastly, to guarantee atomicity, the cache
 controller may not relinquish coherence permission to the block between the load and the store.
+
+## Relaxed Memory Consistency
+
+Relaxed memory consistency models only preserve the orders that programmers *require*. Since
+proper operation does not depend on any ordering of the loads and stores unless to the same
+address, higher performance can be attained by exploiting opportunities such as a non-FIFO
+coalescing write buffer, simpler support for core speculation, and coupling consistency and coherence.
+
+XC maintains TSO rules for ordering 2 accesses to the *same* address.
+
+To implement RMW in XC, draining the write buffer is not necessary because XC allows both the
+load part and store part to bypass earlier stores. Thus, it is sufficient to first acquire
+read-write coherence permissions and then perform the load and store without relinquishing
+the block in between.
