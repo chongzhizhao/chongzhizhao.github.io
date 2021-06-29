@@ -68,3 +68,17 @@ To implement RMW in XC, draining the write buffer is not necessary because XC al
 load part and store part to bypass earlier stores. Thus, it is sufficient to first acquire
 read-write coherence permissions and then perform the load and store without relinquishing
 the block in between.
+
+## Coherence Protocols
+
+To implement the invariants, a finite state machine called *cache controller* is attached to each cache.
+On the *core side*, the controller accepts loads and stores. A cache miss causes the controller to
+initiate a coherence transaction by issuing a coherence request. On its *network side*, it receives
+coherence requests and responses.
+
+We refer to the controller at the LLC/memory as *memory controller*. It is similar to a cache
+controller except that it only has the network side. As such, it does not issue coherence requests or
+receive coherence responses.
+
+A writeback cache, when a store hits, only writes to the local cache and waits to write the entire block
+back to the LLC/memory at eviction.
