@@ -7,3 +7,5 @@
 - [Demme et al., 2012](svf.md)
 
 - [Deng et al., 2021](deng_attack_arm.md)
+
+- [Schaik et al., 2021, CacheOut](schaik_cacheout.md)
