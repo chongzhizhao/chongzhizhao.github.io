@@ -25,6 +25,11 @@ There is undocumented interaction between LFB and L1D.
 
 ## Approach
 
+Variant 1 targets data modified by the victim's write operations.
+
+Variant 2 targets data read but not modified by the victim.
+
+TAA-NG is deployed to control the byte offset and thus leak the whole line.
 
 ## Results
 
