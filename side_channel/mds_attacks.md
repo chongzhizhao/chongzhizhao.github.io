@@ -9,7 +9,13 @@ processor to overwrite the affected buffers.
 
 ## Mechanisms
 
-RIDL can exploit Line Fill Buffers and Load Ports.
+RIDL can exploit Line Fill Buffers and Load Ports. LFB implements multiple
+MSHRs to enable a non-blocking cache.
 
 Fallout leaks data from Store Buffers by forwarding a store value to a
 faulting or assisting load.
+
+ZombieLoad's authors deduce that the leakage sources are not only limited to
+LFB but possibly including the load buffer. LFB serves as an interface to other caches
+and the main memory and keeps track of outstanding loads. Memory accesses to
+uncacheable memory regions, and non-temporal moves all go through the LFB.
