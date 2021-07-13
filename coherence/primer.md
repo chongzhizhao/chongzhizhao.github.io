@@ -95,21 +95,21 @@ MOESI states cover what most coherence protocols need, while MSI states are the 
 All states besides I are valid. Both M and E denote exclusivity. Both M and O suggest that the block
 can be dirty.
 
-    - M(odified): valid, exclusive, owned, and potentially dirty. This cache has the only valid copy
-    of the block and must respond to requests for the block. The copy at the LLC/memory may be stale.
+- M(odified): valid, exclusive, owned, and potentially dirty. This cache has the only valid copy
+of the block and must respond to requests for the block. The copy at the LLC/memory may be stale.
 
-    - S(hared): valid, not exclusive, not dirty, and not owned. This cache has a read-only copy of
-    the block, and other cache may also have valid read-only copies.
+- S(hared): valid, not exclusive, not dirty, and not owned. This cache has a read-only copy of
+the block, and other cache may also have valid read-only copies.
 
-    - I(nvalid): This cache either has not the block or contains a stale copy.
+- I(nvalid): This cache either has not the block or contains a stale copy.
 
-    - O(wned): valid, owned, potentially dirty, but not exclusive. This cache has a read-only copy
-    of the block and must respond to requests for it. Other caches may have a read-only copy, but
-    they are not owners. The copy at the LLC/memory may be stale.
+- O(wned): valid, owned, potentially dirty, but not exclusive. This cache has a read-only copy
+of the block and must respond to requests for it. Other caches may have a read-only copy, but
+they are not owners. The copy at the LLC/memory may be stale.
 
-    - E(xclusive): valid, exclusive, and clean. This cache has a read-only copy of the block.
-    No other cache has a valid copy of it, and the copy in the LLC/memory is up-to-date. There are
-    protocols in which E state is not treated as an ownership state.
+- E(xclusive): valid, exclusive, and clean. This cache has a read-only copy of the block.
+No other cache has a valid copy of it, and the copy in the LLC/memory is up-to-date. There are
+protocols in which E state is not treated as an ownership state.
 
 ![MOESI Venn diagram](./media/moesi_states.png "MOESI states")
 
