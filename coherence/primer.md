@@ -97,12 +97,16 @@ can be dirty.
 
     - M(odified): valid, exclusive, owned, and potentially dirty. This cache has the only valid copy
     of the block and must respond to requests for the block. The copy at the LLC/memory may be stale.
+
     - S(hared): valid, not exclusive, not dirty, and not owned. This cache has a read-only copy of
     the block, and other cache may also have valid read-only copies.
+
     - I(nvalid): This cache either has not the block or contains a stale copy.
+
     - O(wned): valid, owned, potentially dirty, but not exclusive. This cache has a read-only copy
     of the block and must respond to requests for it. Other caches may have a read-only copy, but
     they are not owners. The copy at the LLC/memory may be stale.
+
     - E(xclusive): valid, exclusive, and clean. This cache has a read-only copy of the block.
     No other cache has a valid copy of it, and the copy in the LLC/memory is up-to-date. There are
     protocols in which E state is not treated as an ownership state.
