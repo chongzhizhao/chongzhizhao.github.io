@@ -113,3 +113,38 @@ protocols in which E state is not treated as an ownership state.
 
 ![MOESI Venn diagram](./media/moesi_states.png "MOESI states")
 
+There are 2 general approaches to naming blocks in LLC/memory. In the more common *cache-centric* approach,
+the state of the block is an aggregate of the states of the block in private caches. In the
+*memory-centric* approach, the state corresponds to the *memory controller*'s permissions to the block.
+
+For caches and LLC, maintaining the stable states requires adding a few bits to the per-block state.
+To maintain transient states for blocks awaiting coherence transactions, implementations usually
+add bits to the MSHRs or similar structures that track pending transactions. With an inclusive LLC,
+memory does not need to explicitly represent the coherence state.
+
+Most protocols have a similar set of transactions. They are all initiated by cache controllers
+responding to their associated cores. Protocols mainly differ in how the controllers interact to
+perform the transactions.
+
+| Event | Response |
+| :---- | :------- |
+| Load  | If hit, respond with data; else initiate GetS. |
+| Store | If hit in state E or M, write data; else initiate GetM or Upg. |
+| RMW   | If hit in state E or M, execute RMW; else initiate GetM or Upg. |
+| Instruction fetch | If hit, respond with instruction; else initiate GetS. |
+| Read-only prefetch | If hit, ignore; else optionally initiate GetS. |
+| Read-write prefetch | If hit in state M, ignore; else optionally initiate GetM or Upg. |
+| Replacement | Depending on the state of the block, initiate PutS, PutM, PutE, or PutO. |
+
+The design of protocols determines what events and transitions are possible at each coherence controller.
+Despite the enormous design space, 2 major decisions stand out: snooping vs. directory and invalidate vs. update.
+Snooping protocols are logically simple but do not scale well because of broadcasting. Directory protocols
+are scalable because they unicast but take more time. Independent of whether the protocol is snooping
+or directory, we need to decide what to do when a core writes to a block. Update protocols reduce the
+latency for a core to read a newly written block but consume more bandwidth. They also complicate the
+implementation of many memory consistency models. Because of the complexity of the update protocols,
+they are rarely used.
+
+## Snooping Coherence Protocols
+
+
