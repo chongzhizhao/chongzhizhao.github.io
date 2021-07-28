@@ -1,5 +1,9 @@
 The newest gem5 requires at least Python 3 and gcc 5.
 
+```
+git clone https://gem5.googlesource.com/public/gem5
+```
+
 In the case where the default gcc version is below 5, run this
 
 ```
