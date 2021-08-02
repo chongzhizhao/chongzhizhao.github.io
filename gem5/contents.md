@@ -2,6 +2,8 @@
 
 - [Build Errors](build.md)
 
+- [Platform Configuration](config.md)
+
 - [Disk Image Management](disk_img.md)
 
 - [Cache Clusivity](clusivity.md)
