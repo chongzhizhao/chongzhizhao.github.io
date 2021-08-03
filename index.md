@@ -33,3 +33,5 @@ If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com so 
 
 - [Consistency and Coherence](coherence/contents.md)
 
+- [Command Line Tools](tools/contents.md)
+
