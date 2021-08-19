@@ -13,3 +13,5 @@
 - [`clflush` instruction](clflush.md)
 
 - [m5ops](m5ops.md)
+
+- [`pkt` class and `req` class](pkt_req.md)
