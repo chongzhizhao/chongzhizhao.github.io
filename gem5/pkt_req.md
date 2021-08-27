@@ -1,6 +1,6 @@
-# Understanding `pkt` class and `req` class in gem5
+# Understanding `Packet` class and `Request` class in gem5
 
-## `pkt` class
+## `Packet` class
 
 A packet is used to encapsulate a transaction between 2 objects in the memory system.
 
@@ -12,7 +12,7 @@ header delay. Similar to the header delay, this is used to make up for the fact 
 crossbar does not make the packet wait. As the delay is relative, a 32-bit unsigned
 should be sufficient. 
 
-## `req` class
+## `Request` class
 
 A request travels all the way from the requestor to the ultimate destination and back,
 possibly conveyed by several different packets along the way.
