@@ -17,11 +17,11 @@ cache replacement policies, and prefetching.
 
 Yasin, M., **Zhao, C.**, Rajendran, J. (2019). SFLL-HLS: Stripped-Functionality Logic Locking Meets High-Level Synthesis. ICCAD.
 
-## Contact
+## Personal Projects
 
-If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com so that I can send you my resume.
+- [Raspberry Pi Home Surveillance](personal_proj/pi_timolo.md)
 
-# Topics of Notes
+## Topics of Notes
 
 - [Cache Side-Channel Attacks](side_channel/contents.md)
 
@@ -36,3 +36,7 @@ If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com so 
 - [Command Line Tools](tools/contents.md)
 
 - [Cryptography](cryptography/contents.md)
+
+## Contact
+
+If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com.
