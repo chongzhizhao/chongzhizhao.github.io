@@ -2,15 +2,14 @@
 
 ## Summary of Research
 
-As computing grows in connectivity and heterogeneity, security ought
-to be regarded as a first-order design metric as well as performance
-and power. To this end, my research involves side-channel attacks,
-cache replacement policies, and prefetching.
+As computing grows in connectivity and heterogeneity, security ought to be regarded as
+a first-order design metric. To this end, my research explores cache side-channel attacks,
+an intersection of computer architecture, system security, and operating systems.
 
 ## Skills
 
-- Beginner: x86 Assembly, LATEX, Raspberry Pi ecosystem
-- Intermediate: Python, Verilog, QEMU Emulator, Xilinx Vivado
+- Beginner: JavaScript, LATEX, Raspberry Pi ecosystem
+- Intermediate: Python, Verilog, QEMU Emulator, Xilinx Vivado, x86 Assembly, Synopsys Design Compiler
 - Proficient: C/C++, gem5 Simulator, ARMv8 Assembly, Linux OS
 
 ## Publications
