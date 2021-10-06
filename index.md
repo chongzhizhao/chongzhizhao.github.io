@@ -40,3 +40,14 @@ If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com.
 
 - [Cryptography](cryptography/contents.md)
 
+## Motto
+
+And he said to all, "If anyone would come after me, let him deny himself and take up his
+cross daily and follow me. For whoever would save his life will lose it, but whoever loses
+his life for my sake will save it. For what does it profit a man if he gains the whole world
+and loses or forfeits himself? For whoever is ashamed of me and of my words, of him will
+the Son of Man be ashamed when he comes in his glory and the glory of the Father and of the
+holy angels. But I tell you truly, there are some standing here who will not taste death
+until they see the kingdom of God."
+
+Luke 9:23-27
