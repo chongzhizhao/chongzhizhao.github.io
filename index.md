@@ -9,7 +9,7 @@ an intersection of computer architecture, systems security, and operating system
 ## Skills
 
 - Beginner: JavaScript, LaTeX, Synopsys Design Compiler
-- Intermediate: Python, Verilog, Xilinx Vivado, ARMv8 Assembly, QEMU Emulator, Raspberry Pi Board, FPGA
+- Intermediate: Python, Verilog, Xilinx Vivado, ARMv8 Assembly, QEMU Emulator, Raspberry Pi, FPGA
 - Proficient: C/C++, gem5 Simulator, x86 Assembly, Unix/Linux CLI
 
 ## Publications
@@ -23,6 +23,10 @@ If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com.
 ## Personal Projects
 
 - [Raspberry Pi Home Surveillance](personal_proj/pi_timolo.md)
+
+## Bug Bounty Hunting
+
+- [dogecoin](https://github.com/dogecoin/dogecoin/issues/2625)
 
 ## Topics of Notes
 
