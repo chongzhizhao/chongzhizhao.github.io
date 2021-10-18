@@ -26,7 +26,7 @@ If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com.
 
 ## Bug Bounty Hunting
 
-- [dogecoin](https://github.com/dogecoin/dogecoin/issues/2625)
+- [Dogecoin](https://github.com/dogecoin/dogecoin/issues/2625)
 
 ## Topics of Notes
 
@@ -54,4 +54,4 @@ the Son of Man be ashamed when he comes in his glory and the glory of the Father
 holy angels. But I tell you truly, there are some standing here who will not taste death
 until they see the kingdom of God."
 
-Luke 9:23-27
+**Luke 9:23-27**
