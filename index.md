@@ -20,9 +20,10 @@ Yasin, M., **Zhao, C.**, Rajendran, J. (2019). SFLL-HLS: Stripped-Functionality 
 
 If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com.
 
-## Personal Projects
+## Hobby Projects
 
 - [Raspberry Pi Home Surveillance](personal_proj/pi_timolo.md)
+- Pyparazzi Web Scraping and Data Visualization Python Library
 
 ## Bug Bounty Hunting
 
@@ -34,7 +35,7 @@ If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com.
 
 - [Linux Kernel](linux/contents.md)
 
-- [gem5](gem5/contents.md)
+- [The gem5 Simulator](gem5/contents.md)
 
 - [Hardware Reverse-Engineering](hw_reveng/contents.md)
 
