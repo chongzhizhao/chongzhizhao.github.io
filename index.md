@@ -23,7 +23,8 @@ If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com.
 ## Hobby Projects
 
 - [Raspberry Pi Home Surveillance](personal_proj/pi_timolo.md)
-- Pyparazzi Web Scraping and Data Visualization Python Library
+
+- Pyparazzi, a Web Scraping and Data Visualization Python Library
 
 ## Bug Bounty Hunting
 
