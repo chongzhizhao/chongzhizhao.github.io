@@ -1,16 +1,16 @@
 # About Me
 
-## Research
+## Statement
 
-As computing grows in connectivity and heterogeneity, security ought to be regarded as
-a first-order design metric. To this end, my research explores cache side-channel attacks,
-an intersection of computer architecture, systems security, and operating systems.
+As computing grows in connectivity and heterogeneity, security ought to be regarded
+as a first-order design metric. With this in mind, I explore computer architecture
+and embedded systems.
 
 ## Skills
 
 - Beginner: JavaScript, LaTeX, Synopsys Design Compiler
-- Intermediate: Python, Verilog, Xilinx Vivado, ARMv8 Assembly, QEMU Emulator, Raspberry Pi, FPGA
-- Proficient: C/C++, gem5 Simulator, x86 Assembly, Unix/Linux CLI
+- Intermediate: Python, Verilog, Xilinx Vivado, ARMv8 Assembly, C#, Raspberry Pi, Xilinx FPGA
+- Proficient: C/C++, Linux Device Drivers, gem5 Simulator, x86 Assembly, Unix/Linux CLI
 
 ## Publications
 
@@ -18,7 +18,7 @@ Yasin, M., **Zhao, C.**, Rajendran, J. (2019). SFLL-HLS: Stripped-Functionality 
 
 ## Contact
 
-If you are a recruiter, please find me at chongzhizhao4 (at) gmail (dot) com.
+If you are a recruiter, please contace me at chongzhizhao4 (at) gmail (dot) com.
 
 ## Hobby Projects
 
